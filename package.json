@@ -1,14 +1,14 @@
 {
   "name": "language-hubris",
   "main": "./lib/language-hubris",
-  "version": "0.0.0",
-  "description": "A short description of your package",
+  "version": "0.0.1",
+  "description": "An editor mode for the Hubris programming language",
   "keywords": [
   ],
   "activationCommands": {
     "atom-workspace": "language-hubris:toggle"
   },
-  "repository": "https://github.com/atom/language-hubris",
+  "repository": "https://github.com/hubris-lang/language-hubris",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
