@@ -1,0 +1,9 @@
+'.source.hubris':
+  'editor':
+    'autoIndentOnPaste': false
+    'softTabs': true
+    'tabLength': 2
+    # 'foldEndPattern': '^\\s*"""\\s*$'
+    'commentStart': '-- '
+    'increaseIndentPattern': '^\\s*(|begin|match|def)\\b.*:\\s*$'
+    'decreaseIndentPattern': '^\\s*(end)\\b.*:'

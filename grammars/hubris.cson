@@ -3,7 +3,7 @@
 'name': 'Hubris'
 
 'fileTypes': [
-  'hb'
+  'hbr'
 ]
 
 'patterns': [
@@ -13,7 +13,7 @@
   }
   {
     'name'  : 'keyword.other.hubris'
-    'match' : '\\b(module|inductive|import|match|with|forall|def|end)\\b'
+    'match' : '\\b(module|begin|axiom|open|inductive|import|match|with|forall|def|end)\\b'
   }
   {
     'name'  : 'constant.language.Type.hubris'
