@@ -48,6 +48,12 @@ module.exports = LanguageHubris =
     editor = atom.workspace.getActiveTextEditor()
     pos = editor.getCursorBufferPosition()
     range = new Range(@range_start, pos)
+
+    if @marker?
+      @marker.destroy()
+    @marker = editor.markBufferRange(range, invalidate: 'inside')
+    editor.decorateMarker(@marker, { type: 'line', class: 'prove-window'});
+
     text = editor.getTextInBufferRange(range)
     req =
       url: "http://localhost:3000/check"
@@ -55,8 +61,9 @@ module.exports = LanguageHubris =
     request.get req,
     (error, response, body) =>
       console.log(error)
+      console.log("response:")
       console.log(response)
       console.log(body)
       # @range_start = pos
-    console.log(pos)
-    console.log(text)
+    # console.log(pos)
+    # console.log(text)
